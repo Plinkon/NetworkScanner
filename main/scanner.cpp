@@ -59,7 +59,7 @@ int main() {
             int family = ifa->ifa_addr->sa_family;
             if (family == AF_INET && (ifa->ifa_flags & IFF_RUNNING)) {
                 getnameinfo(ifa->ifa_addr, sizeof(struct sockaddr_in), host, NI_MAXHOST, NULL, 0, NI_NUMERICHOST);
-                std::cout << "Scanning network " << host << "..." << std::endl;
+                std::cout << "Scanning network " << host << "... (this might take some time)" << std::endl;
 
                 // Construct the broadcast address from the network address
                 std::string broadcast_addr = std::string(host);
