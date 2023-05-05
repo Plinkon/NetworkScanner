@@ -1,0 +1,1 @@
+To use, run the "scanner.exe" file and then if you want to quit, press any button.
